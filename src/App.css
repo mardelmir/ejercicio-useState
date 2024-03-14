@@ -1,8 +1,11 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: 500px;
 }
 
 .list {
@@ -40,15 +43,16 @@ form button {
 }
 
 form button:hover {
-  /* background-color: #a9c0cc; */
   background-color: #64c9ff;
   cursor: pointer;
 }
 
 #empty{
+  margin-top: 15px;
   color: crimson;
   font-weight: 600;
 }
+
 .resetBtn {
   border-radius: 8px;
   border: 1px solid transparent;
