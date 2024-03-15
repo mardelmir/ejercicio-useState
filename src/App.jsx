@@ -14,7 +14,7 @@ function App() {
     }
 
     const resetApp = () => {
-        setName('Sofía'); 
+        setName('Sofía');
         setNewName('');
         empty.textContent = ''
     }
@@ -29,7 +29,7 @@ function App() {
             </ul>
 
             <form onSubmit={changeName}>
-                <input type="text" value={newName} onChange={(e) => setNewName(e.target.value)} placeholder="Add a name"></input>
+                <input type="text" value={newName} onChange={(e) => setNewName(e.target.value)} placeholder="Add a name" />
                 <button type="submit">Add</button>
             </form>
 
@@ -45,3 +45,7 @@ export default App
 
 // import ReactDom from 'react-dom/client' // No me hace falta porque no lo uso aquí
 // ReactDom.createRoot(document.getElementById('root')).render(<App />) // Línea que causaba el error
+
+// BONUS CLASE:
+// Para ir dirigido, si se tienen muchos más formularios sí se haría como lo hice yo
+// < form onSubmit = { (e) => {e.preventDefault(); changeName()} } >
